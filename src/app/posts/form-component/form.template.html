@@ -1,0 +1,11 @@
+<form (ngSubmit)="doSave($event); postForm.reset();" #postForm="ngForm">
+  <div>
+    <input type="text" name="title" [(ngModel)]="editPost.title" required>
+
+  </div>
+  <div>
+    <input type="text" name="body" [(ngModel)]="editPost.body" required>
+  </div>
+  <button type="submit" [disabled]="postForm.form.invalid">Save</button>
+  <button type="button" (click)="doCancel()">Cancel</button>
+</form>
