@@ -1,4 +1,4 @@
-import {Component, Input, SimpleChanges, EventEmitter, Output} from '@angular/core';
+import {Component, Input, EventEmitter, Output} from '@angular/core';
 import { Post } from '../../shared/post';
 
 @Component({
