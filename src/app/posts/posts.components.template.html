@@ -2,4 +2,4 @@
 <div>
   <button (click)="newPost()">New Post</button>
 </div>
-<app-posts-list (edit)="doEdit($event)"  (delete)="doDelete($event)"></app-posts-list>
+<app-posts-list (edit)="doEdit($event)"  (delete)="doDelete($event)" [posts]="posts"></app-posts-list>
